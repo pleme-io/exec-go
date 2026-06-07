@@ -14,7 +14,7 @@ typed, code-carrying error via `errors-go` (`exec_nonzero` / `exec_start` /
 
 ## Why
 
-Wrapping external CLIs (the akeyless CLI, kubectl, helm, git, …) recurs across
+Wrapping external CLIs (kubectl, helm, git, …) recurs across
 tools. One typed builder means uniform output capture, uniform timeout handling,
 and uniform exit-code → `errs.Exit` mapping — never a hand-rolled `exec.Command`
 + buffer + `if err != nil` again.
